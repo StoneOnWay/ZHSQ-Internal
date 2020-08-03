@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDAboutController">
+            <connections>
+                <outlet property="versionLabel" destination="l8l-NL-AdX" id="ySQ-7f-uwl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PqU-vO-Dwh">
+                    <rect key="frame" x="157" y="80" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PqU-vO-Dwh" secondAttribute="height" multiplier="1:1" id="1OT-DF-R8z"/>
+                        <constraint firstAttribute="width" constant="100" id="jdc-88-19a"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长房里业主端" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoE-6a-PcY">
+                    <rect key="frame" x="140" y="215" width="134" height="27"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-NL-AdX">
+                    <rect key="frame" x="161" y="246.99999999999997" width="92" height="19.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright©️2019 Chanfine All Right Reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-5B-Zuq">
+                    <rect key="frame" x="103.66666666666669" y="694.66666666666663" width="207" height="31.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长房数创  版权所有" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF1-Sg-l4F">
+                    <rect key="frame" x="150.33333333333334" y="677" width="113.33333333333334" height="15.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WF1-Sg-l4F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B2f-Kn-caN"/>
+                <constraint firstItem="l8l-NL-AdX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BXc-Lm-zUK"/>
+                <constraint firstItem="PqU-vO-Dwh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="Qjv-Xz-fvJ"/>
+                <constraint firstItem="PqU-vO-Dwh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RAT-o3-fUs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="c6I-5B-Zuq" secondAttribute="bottom" constant="10" id="ThA-2Q-FD5"/>
+                <constraint firstItem="yoE-6a-PcY" firstAttribute="top" secondItem="PqU-vO-Dwh" secondAttribute="bottom" constant="35" id="UjK-eV-q8z"/>
+                <constraint firstItem="l8l-NL-AdX" firstAttribute="top" secondItem="yoE-6a-PcY" secondAttribute="bottom" constant="5" id="VKL-vN-zjr"/>
+                <constraint firstItem="c6I-5B-Zuq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:2" id="dAA-QX-6eP"/>
+                <constraint firstItem="c6I-5B-Zuq" firstAttribute="top" secondItem="WF1-Sg-l4F" secondAttribute="bottom" constant="2" id="m3I-FT-rED"/>
+                <constraint firstItem="yoE-6a-PcY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t1A-mF-cvM"/>
+                <constraint firstItem="c6I-5B-Zuq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zgr-b0-uB0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_icon" width="60" height="60"/>
+    </resources>
+</document>

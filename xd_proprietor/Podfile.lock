@@ -1,0 +1,106 @@
+PODS:
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - HCSStarRatingView (1.4.5)
+  - HMSegmentedControl (1.5.6)
+  - JCore (2.1.4-noidfa)
+  - JPush (3.2.4-noidfa):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - JXBWebKit (1.1.4)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.4.3)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - UICollectionViewLeftAlignedLayout (1.0.2)
+  - UMCCommon (2.1.4)
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.9.8):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.8):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedSina (6.9.8):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.8):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/UI (6.9.8):
+    - UMCCommon
+    - UMCShare/Core
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking/NSURLSession (~> 3.0)
+  - AFNetworking/Reachability (~> 3.0)
+  - AFNetworking/Security (~> 3.0)
+  - AFNetworking/Serialization (~> 3.0)
+  - HCSStarRatingView (~> 1.4.5)
+  - HMSegmentedControl
+  - JCore (= 2.1.4-noidfa)
+  - JPush (= 3.2.4-noidfa)
+  - JXBWebKit (~> 1.1.4)
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - SDWebImage
+  - UICollectionViewLeftAlignedLayout (~> 1.0.2)
+  - UMCCommon
+  - UMCSecurityPlugins
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedSina
+  - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI
+  - YYKit
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - AFNetworking
+    - HCSStarRatingView
+    - HMSegmentedControl
+    - JCore
+    - JPush
+    - JXBWebKit
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - UICollectionViewLeftAlignedLayout
+    - UMCCommon
+    - UMCSecurityPlugins
+    - UMCShare
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
+  HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
+  JCore: 2f15311e6889ab43ed5d629802ef793cac566465
+  JPush: 2ff11d3013b360bc1b7da16741027e88f12fe3e6
+  JXBWebKit: 088adad711d15cd26be6a32151e11a4385b3dbac
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  UICollectionViewLeftAlignedLayout: 830bf6fa5bab9f9b464f62e3384f9d2e00b3c0f6
+  UMCCommon: b0703b0053323f598e01670ea702b8eb1e66e611
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: a250203b34a56cde25cc4c28335449b542f0255d
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 21e39555906432ee7e14d4762bc1b74d2a839412
+
+COCOAPODS: 1.9.1

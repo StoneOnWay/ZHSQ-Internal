@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="HZBaseAddImageItemCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-Nv-gRS">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_public_add" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-mo-7Qm">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="CW0-mo-7Qm" secondAttribute="bottom" id="fWE-05-i0l"/>
+                        <constraint firstItem="CW0-mo-7Qm" firstAttribute="top" secondItem="eEd-Nv-gRS" secondAttribute="top" id="gUi-lj-mbE"/>
+                        <constraint firstAttribute="trailing" secondItem="CW0-mo-7Qm" secondAttribute="trailing" id="pqT-rp-pWe"/>
+                        <constraint firstItem="CW0-mo-7Qm" firstAttribute="leading" secondItem="eEd-Nv-gRS" secondAttribute="leading" id="x4b-Ek-s3Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eEd-Nv-gRS" secondAttribute="trailing" id="8cO-N7-93w"/>
+                <constraint firstItem="eEd-Nv-gRS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RSZ-Ir-Wf7"/>
+                <constraint firstItem="eEd-Nv-gRS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nhm-xo-N6W"/>
+                <constraint firstAttribute="bottom" secondItem="eEd-Nv-gRS" secondAttribute="bottom" id="xGC-1k-x7l"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="showImageView" destination="CW0-mo-7Qm" id="f6R-a6-lbM"/>
+            </connections>
+            <point key="canvasLocation" x="-305.60000000000002" y="-148.42578710644679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_public_add" width="75" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDOpenClokController">
+            <connections>
+                <outlet property="codeImage" destination="XEU-u5-U5j" id="w8f-yq-rNz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_code_default" translatesAutoresizingMaskIntoConstraints="NO" id="XEU-u5-U5j">
+                    <rect key="frame" x="40" y="60" width="295" height="295"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XEU-u5-U5j" secondAttribute="height" multiplier="1:1" id="7Op-wt-MZH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请将二维码对准摄像头" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL4-32-JXx">
+                    <rect key="frame" x="106" y="375" width="163.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7Oi-75-cKu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJR-1V-3wh">
+                    <rect key="frame" x="122" y="425" width="121" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ffp-9F-5Ti"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="刷新一下" image="lock_refresh">
+                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="codeBtnClick:" destination="-1" eventType="touchUpInside" id="fnz-kq-0y8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XEU-u5-U5j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="A2V-WM-vIA"/>
+                <constraint firstAttribute="trailing" secondItem="XEU-u5-U5j" secondAttribute="trailing" constant="40" id="BQy-24-uUI"/>
+                <constraint firstItem="XEU-u5-U5j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Fzg-Xl-F7c"/>
+                <constraint firstItem="KJR-1V-3wh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-5" id="gzX-5v-NLG"/>
+                <constraint firstItem="XEU-u5-U5j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="heR-gx-EmO"/>
+                <constraint firstItem="GL4-32-JXx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qqK-dR-w5Y"/>
+                <constraint firstItem="GL4-32-JXx" firstAttribute="top" secondItem="XEU-u5-U5j" secondAttribute="bottom" constant="20" id="rJz-Zr-Uox"/>
+                <constraint firstItem="KJR-1V-3wh" firstAttribute="top" secondItem="GL4-32-JXx" secondAttribute="bottom" constant="10" id="uCb-qP-vYo"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="lock_code_default" width="392" height="395"/>
+        <image name="lock_refresh" width="32" height="32"/>
+    </resources>
+</document>

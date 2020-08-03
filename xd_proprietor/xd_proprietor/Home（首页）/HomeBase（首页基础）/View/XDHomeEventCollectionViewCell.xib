@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="XDHomeEventCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="163"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xV7-r6-zgZ">
+                    <rect key="frame" x="65" y="52.5" width="62" height="58"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3n5-yi-uCX">
+                            <rect key="frame" x="17.5" y="0.0" width="27" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="27" id="HR7-J0-mPj"/>
+                                <constraint firstAttribute="height" constant="27" id="kc1-bK-4Uu"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E3-Ne-b9n">
+                            <rect key="frame" x="0.0" y="58" width="62" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.20392156859999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="7E3-Ne-b9n" firstAttribute="leading" secondItem="xV7-r6-zgZ" secondAttribute="leading" id="47l-1F-CaD"/>
+                        <constraint firstAttribute="height" constant="58" id="IgZ-Y0-xpB"/>
+                        <constraint firstAttribute="bottom" secondItem="7E3-Ne-b9n" secondAttribute="bottom" id="NCE-hc-HT0"/>
+                        <constraint firstItem="3n5-yi-uCX" firstAttribute="top" secondItem="xV7-r6-zgZ" secondAttribute="top" id="UwG-iK-sjQ"/>
+                        <constraint firstItem="3n5-yi-uCX" firstAttribute="centerX" secondItem="xV7-r6-zgZ" secondAttribute="centerX" id="fdW-KV-LM9"/>
+                        <constraint firstAttribute="trailing" secondItem="7E3-Ne-b9n" secondAttribute="trailing" id="gim-9z-F2J"/>
+                        <constraint firstAttribute="width" constant="62" id="ppp-20-faY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.17254901959999999" green="0.20392156859999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xV7-r6-zgZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V2L-GJ-Sd9"/>
+                <constraint firstItem="xV7-r6-zgZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="grU-ju-WIc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="3n5-yi-uCX" id="5zQ-GQ-m2D"/>
+                <outlet property="titleLabel" destination="7E3-Ne-b9n" id="91O-dQ-k67"/>
+            </connections>
+            <point key="canvasLocation" x="-105.59999999999999" y="-129.08545727136433"/>
+        </view>
+    </objects>
+</document>

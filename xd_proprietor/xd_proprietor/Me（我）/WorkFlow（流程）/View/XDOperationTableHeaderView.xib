@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XDOperationTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPY-sA-RfF">
+                    <rect key="frame" x="0.0" y="0.5" width="310" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服中心确认工单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trf-Nx-Wa1">
+                            <rect key="frame" x="89.5" y="15" width="131" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsX-lR-mMW">
+                            <rect key="frame" x="265" y="14.5" width="35" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="fIU-ey-x66"/>
+                                <constraint firstAttribute="width" constant="35" id="rKh-S8-CEb"/>
+                            </constraints>
+                            <state key="normal" image="btn_public_up"/>
+                            <state key="selected" image="btn_public_down"/>
+                            <connections>
+                                <action selector="upfoldAciton:" destination="iN0-l3-epB" eventType="touchUpInside" id="E4c-as-qkT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Trf-Nx-Wa1" firstAttribute="centerX" secondItem="FPY-sA-RfF" secondAttribute="centerX" id="ChJ-1r-Jy2"/>
+                        <constraint firstItem="WsX-lR-mMW" firstAttribute="centerY" secondItem="FPY-sA-RfF" secondAttribute="centerY" id="R3g-I6-2tf"/>
+                        <constraint firstAttribute="trailing" secondItem="WsX-lR-mMW" secondAttribute="trailing" constant="10" id="fP1-8Q-8tu"/>
+                        <constraint firstItem="Trf-Nx-Wa1" firstAttribute="centerY" secondItem="FPY-sA-RfF" secondAttribute="centerY" id="yQQ-Sf-kHx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FPY-sA-RfF" secondAttribute="bottom" constant="0.5" id="C6l-eE-3Y3"/>
+                <constraint firstItem="FPY-sA-RfF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WI8-Vs-XhZ"/>
+                <constraint firstItem="FPY-sA-RfF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="0.5" id="Yle-Zg-aas"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FPY-sA-RfF" secondAttribute="trailing" id="iOP-Wt-Hos"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="Trf-Nx-Wa1" id="meP-jW-Jz6"/>
+                <outlet property="upfoldBtn" destination="WsX-lR-mMW" id="qa0-S5-Gik"/>
+            </connections>
+            <point key="canvasLocation" x="86.400000000000006" y="-116.04197901049476"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_public_down" width="11.5" height="6.5"/>
+        <image name="btn_public_up" width="11.5" height="6.5"/>
+    </resources>
+</document>

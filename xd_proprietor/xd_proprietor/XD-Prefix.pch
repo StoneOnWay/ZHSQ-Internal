@@ -1,0 +1,147 @@
+//
+//  XD-Prefix.pch
+//  XD业主
+//
+//  Created by zc on 2017/6/16.
+//  Copyright © 2017年 zc. All rights reserved.
+//
+
+#ifndef XD_Prefix_pch
+#define XD_Prefix_pch
+
+// 本地用户信息
+#import "XDHTTPRequst.h"
+#import "XDRequstManager.h"
+#import "XDLoginInfoModel.h"
+#import "XDArchiverManager.h"
+#import "XDCommonBusiness.h"
+
+/**
+ kUseScreenShotGesture为截图返回效果   0为关闭，1为打开
+ （针对整个APP全局的）
+ */
+#pragma mark -------------------截图返回手势
+#define kUseScreenShotGesture  1
+
+#define TheUserDefaults [NSUserDefaults standardUserDefaults]
+#define kScaleFrom_iPhone5_Desgin(_X_) (_X_ * (kScreenWidth/320))
+
+#define kLibraryPath [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject]
+
+// 随机色
+#define randomColor RGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+//#define BianKuang RGB(201, 170, 103)   //边框的颜色
+
+#define BianKuang RGB(211, 211, 211)   //边框的颜色
+
+#define backColor RGB(255, 253, 239)    //背景颜色RGB(255, 253, 239);
+#define litterBackColor RGB(240, 240, 240) //其余小的背景
+#define textsColor RGB(74, 74, 74)
+#define buttonColor RGB(34, 172, 90) // 按钮颜色
+#define OnlineColor RGB(19, 173, 87) 
+
+//RGB
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b)     RGBA(r, g, b, 1.0f)
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+/** 弱引用 */
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+
+//状态栏高度
+#define STATUSBAR_HEIGHT (ISHORIZONTALSCREEM ? (ISIPHONE_X ? 0 : STATUSBAR_ORGINAL_HEIGHT) : STATUSBAR_ORGINAL_HEIGHT )
+//statusbar默认高度 orginal
+#define STATUSBAR_ORGINAL_HEIGHT  ([UIApplication sharedApplication].statusBarFrame.size.height)
+
+//判断iPhoneX
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//判断iPHoneXr
+#define iPhoneXr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size): NO)
+//判断iPhoneXs
+#define iPhoneXs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//判断iPhoneXs Max
+#define iPhoneXs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 适配iPhone X 状态栏高度
+#define StatusBarHeight (iPhoneX || iPhoneXs_Max || iPhoneXr ? 44.f : 20.f)
+// 适配iPhone X 导航栏高度
+#define NavHeight (iPhoneX || iPhoneXs_Max || iPhoneXr ? 88.f : 64.f)
+// 适配iPhone X Tabbar距离底部的距离
+#define TabbarSafeBottomMargin (iPhoneX || iPhoneXs_Max || iPhoneXr ? 34.f : 0.f)
+// 适配iPhone X Tabbar高度
+#define TabbarHeight (iPhoneX || iPhoneXs_Max || iPhoneXr ? (49.f+34.f) : 49.f)
+
+//屏幕的高度
+#define SCREEN_MAX_LENGTH (MAX(kScreenWidth, kScreenHeight))
+
+//屏幕是否是横屏状态
+#define ISHORIZONTALSCREEM UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)
+
+//retain屏
+#define ISRETAIN ([[UIScreen mainScreen] scale] >= 2.0)
+//屏幕尺寸判断
+#define ISIPHONE   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define ISIPHONE_4  (ISIPHONE && SCREEN_MAX_LENGTH == 480.0f)  // 4/4s            3.5寸   320*480
+#define ISIPHONE_5  (ISIPHONE && SCREEN_MAX_LENGTH == 568.0f)  // 5/5s/se           4寸   320*568
+#define ISIPHONE_6  (ISIPHONE && SCREEN_MAX_LENGTH == 667.0f)  // 6/6s/7/8        4.7寸   375*667
+#define ISIPHONE_6P (ISIPHONE && SCREEN_MAX_LENGTH == 736.0f)  // 6p/6ps/7p/8p    5.5寸   414*736
+#define ISIPHONE_X  (ISIPHONE && SCREEN_MAX_LENGTH == 812.0f)  // iPhonex         5.8寸   375*812
+
+//单个
+#define SFont(a) [UIFont systemFontOfSize:a]
+//比较
+#define CFont(a, b) ((kScreenWidth > 320)? SFont(a):SFont(b))
+
+#define PageSiz 10
+#define KCycleScrollViewHeight 250.f * kScreenWidth / 414.f
+
+#define AppServiceProtocalUrl @"http://dev.chanfine.com:9082/privacy/135310.html"
+#define CardQueryUrl @"http://www.51zzl.com/rcsh/fcz.asp"
+#define RimServerUrl @"http://map.baidu.com/mobile/webapp/index/index"
+#define PackageSearchUrl @"https://m.kuaidi100.com/app/?coname=hao123"
+#define WaterPayUrl @"https://billcloud.unionpay.com/ccfront/loc/CH5512/search?category=D4"
+#define ElectricityPayUrl @"https://billcloud.unionpay.com/ccfront/loc/CH5512/search?category=D1"
+
+#define XDActivityDidUpdateRegistNoti @"XDActivityDidUpdateRegistNoti"
+
+// 流程类型
+typedef NS_ENUM(NSInteger, XDFlowStatus) {
+    XDFlowStatusAll = 1, // 已完成、进行中的流程
+    XDFlowStatusUntreated // 待办流程
+};
+
+#import "AppDelegate.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "BaseNavigationController.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "CustomAlertView.h"
+#import "UIImageView+WebCache.h"
+#import "KyIsOpenPrivate.h"
+#import "KYCompressImage.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+YC_HUD.h"
+#import "UIView+Create.h"
+#import <YYKit.h>
+#import "UIViewController+Create.h"
+#import "UIViewController+NavItem.h"
+#import "XDUtil.h"
+#import "JXBWebViewController.h"
+#import "XDHybridWebController.h"
+#import "Masonry.h"
+#import "XDNotOpenController.h"
+#import "XDStringDefine.h"
+
+// 引入JPush功能所需头文件
+#import "JPUSHService.h"
+#import "KYConsts.h"
+#import "SVProgressHUD.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+#endif /* XD_Prefix_pch */

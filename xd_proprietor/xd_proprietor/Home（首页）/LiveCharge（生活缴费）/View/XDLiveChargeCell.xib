@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="XDLiveChargeCell" id="gTV-IL-0wX" customClass="XDLiveChargeCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52c-gc-YKW">
+                        <rect key="frame" x="15" y="15" width="90" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUq-C2-7MK">
+                                <rect key="frame" x="20" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MgJ-6N-jky">
+                                        <rect key="frame" x="7.5" y="7.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="7pF-d2-dgP"/>
+                                            <constraint firstAttribute="height" constant="35" id="x8h-pK-0RO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.034561764448881149" green="0.63692528009414673" blue="0.25116199254989624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Rr-B1-kTa"/>
+                                    <constraint firstItem="MgJ-6N-jky" firstAttribute="centerY" secondItem="JUq-C2-7MK" secondAttribute="centerY" id="HH7-QG-lRb"/>
+                                    <constraint firstItem="MgJ-6N-jky" firstAttribute="centerX" secondItem="JUq-C2-7MK" secondAttribute="centerX" id="fbG-Rh-Dz0"/>
+                                    <constraint firstAttribute="width" constant="50" id="yDz-N4-hrF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opk-k1-uro">
+                                <rect key="frame" x="27.5" y="65" width="35.5" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Opk-k1-uro" secondAttribute="bottom" constant="5" id="5dJ-bX-e0w"/>
+                            <constraint firstItem="JUq-C2-7MK" firstAttribute="top" secondItem="52c-gc-YKW" secondAttribute="top" constant="10" id="hCc-dI-bRd"/>
+                            <constraint firstItem="Opk-k1-uro" firstAttribute="centerX" secondItem="52c-gc-YKW" secondAttribute="centerX" id="iUp-wb-1Jl"/>
+                            <constraint firstAttribute="height" constant="90" id="pOO-d8-XYS"/>
+                            <constraint firstItem="Opk-k1-uro" firstAttribute="top" secondItem="JUq-C2-7MK" secondAttribute="bottom" constant="5" id="tK1-cT-TAv"/>
+                            <constraint firstAttribute="width" constant="90" id="vQ8-yK-2v7"/>
+                            <constraint firstItem="JUq-C2-7MK" firstAttribute="centerX" secondItem="52c-gc-YKW" secondAttribute="centerX" id="whq-YU-WWI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="52c-gc-YKW" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4lA-yr-UBi"/>
+                <constraint firstItem="52c-gc-YKW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sWO-aY-UYH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="205" height="198"/>
+            <connections>
+                <outlet property="iconImageView" destination="MgJ-6N-jky" id="aTs-Mt-k3i"/>
+                <outlet property="titleLabel" destination="Opk-k1-uro" id="UGn-8D-sw4"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="123.23838080959521"/>
+        </collectionViewCell>
+    </objects>
+</document>

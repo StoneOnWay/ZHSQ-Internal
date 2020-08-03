@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDRemoteOpenController">
+            <connections>
+                <outlet property="tableView" destination="dNn-vk-qfR" id="q0i-dw-r4H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxt-5i-Luq">
+                    <rect key="frame" x="0.0" y="54" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="远程开门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNE-FS-mtg">
+                            <rect key="frame" x="20" y="17" width="89.5" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uy3-fb-6ce">
+                            <rect key="frame" x="354" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="COn-BT-aGZ"/>
+                                <constraint firstAttribute="height" constant="40" id="NQD-ZV-h0x"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="cancle"/>
+                            <state key="highlighted" backgroundImage="cancle"/>
+                            <connections>
+                                <action selector="cancleAction:" destination="-1" eventType="touchUpInside" id="6fC-qJ-cz3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4yM-DG-akU"/>
+                        <constraint firstItem="tNE-FS-mtg" firstAttribute="leading" secondItem="Vxt-5i-Luq" secondAttribute="leading" constant="20" id="9oa-ry-d6n"/>
+                        <constraint firstAttribute="trailing" secondItem="Uy3-fb-6ce" secondAttribute="trailing" constant="20" id="erg-e9-YOW"/>
+                        <constraint firstItem="tNE-FS-mtg" firstAttribute="centerY" secondItem="Vxt-5i-Luq" secondAttribute="centerY" id="gd0-u4-BDq"/>
+                        <constraint firstItem="Uy3-fb-6ce" firstAttribute="centerY" secondItem="Vxt-5i-Luq" secondAttribute="centerY" id="zA3-qn-Wla"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dNn-vk-qfR">
+                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dNn-vk-qfR" secondAttribute="bottom" id="CJU-ou-UAj"/>
+                <constraint firstItem="Vxt-5i-Luq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="DEq-e1-nG2"/>
+                <constraint firstItem="dNn-vk-qfR" firstAttribute="top" secondItem="Vxt-5i-Luq" secondAttribute="bottom" id="KG5-s6-IbE"/>
+                <constraint firstItem="Vxt-5i-Luq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="WEP-JG-fh1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Vxt-5i-Luq" secondAttribute="trailing" id="ZMw-L9-qdR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dNn-vk-qfR" secondAttribute="trailing" id="mf4-tu-Smw"/>
+                <constraint firstItem="dNn-vk-qfR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ukr-FT-ffL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="121.875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancle" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDNameEditController">
+            <connections>
+                <outlet property="nameTextFielf" destination="0GR-lR-3PE" id="nBF-10-pgK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0GR-lR-3PE">
+                    <rect key="frame" x="20" y="60" width="335" height="30"/>
+                    <color key="tintColor" red="0.073496751489999998" green="0.67994976039999999" blue="0.33909744019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="vAH-8W-TY3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-De-JKs">
+                    <rect key="frame" x="20" y="90" width="335" height="1"/>
+                    <color key="backgroundColor" red="0.073496751489999998" green="0.67994976039999999" blue="0.33909744019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IUY-F5-7Nx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0GR-lR-3PE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="9AJ-br-txg"/>
+                <constraint firstItem="0GR-lR-3PE" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="JgW-Qp-9vI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Jzn-De-JKs" secondAttribute="trailing" constant="20" id="KyI-Bd-72v"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="0GR-lR-3PE" secondAttribute="trailing" constant="20" id="hLX-wO-GEK"/>
+                <constraint firstItem="Jzn-De-JKs" firstAttribute="top" secondItem="0GR-lR-3PE" secondAttribute="bottom" id="jeI-Fa-hqc"/>
+                <constraint firstItem="Jzn-De-JKs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="r5j-30-I9I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

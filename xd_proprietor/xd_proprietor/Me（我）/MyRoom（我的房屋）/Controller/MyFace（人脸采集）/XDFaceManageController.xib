@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDFaceManageController">
+            <connections>
+                <outlet property="faceImageView" destination="eve-Pl-qrO" id="tRe-Il-nWa"/>
+                <outlet property="photoBtn" destination="gbD-Qg-mRj" id="beI-fo-2Ih"/>
+                <outlet property="stateLabel" destination="IyV-0I-KlQ" id="Qrq-C9-I2H"/>
+                <outlet property="timeLabel" destination="AEs-8R-wca" id="zrY-iQ-Ef8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moren_tx_hui" translatesAutoresizingMaskIntoConstraints="NO" id="eve-Pl-qrO">
+                    <rect key="frame" x="57.5" y="70" width="260" height="260"/>
+                    <color key="backgroundColor" red="0.9410743117" green="0.94123536350000003" blue="0.94106405969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="JiU-yE-kKn"/>
+                        <constraint firstAttribute="height" constant="260" id="oli-e3-gga"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人脸照片尚未上传" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyV-0I-KlQ">
+                    <rect key="frame" x="87.5" y="360" width="200" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="MBZ-fZ-qkh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbD-Qg-mRj">
+                    <rect key="frame" x="20" y="597" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.073496751487255096" green="0.67994976043701172" blue="0.33909744024276733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ekF-F5-juw"/>
+                    </constraints>
+                    <state key="normal" title="拍照并上传我的人脸"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="photoAction:" destination="-1" eventType="touchUpInside" id="IZm-ca-OEP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEs-8R-wca">
+                    <rect key="frame" x="187.5" y="378" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gbD-Qg-mRj" secondAttribute="trailing" constant="20" id="3Ik-1h-WMO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="gbD-Qg-mRj" secondAttribute="bottom" constant="20" id="4e2-Gj-DQO"/>
+                <constraint firstItem="gbD-Qg-mRj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="8LU-WV-Bq4"/>
+                <constraint firstItem="IyV-0I-KlQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HBo-Fv-rVK"/>
+                <constraint firstItem="eve-Pl-qrO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.6" id="KS2-qP-ozL"/>
+                <constraint firstItem="eve-Pl-qrO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ked-gl-szh"/>
+                <constraint firstItem="AEs-8R-wca" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rg9-0n-DJ7"/>
+                <constraint firstItem="IyV-0I-KlQ" firstAttribute="top" secondItem="eve-Pl-qrO" secondAttribute="bottom" constant="30" id="hVJ-Ya-GQa"/>
+                <constraint firstItem="AEs-8R-wca" firstAttribute="top" secondItem="IyV-0I-KlQ" secondAttribute="bottom" id="q8g-Mv-VUU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="131.78410794602701"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="moren_tx_hui" width="248" height="246"/>
+    </resources>
+</document>
